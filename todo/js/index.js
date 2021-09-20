@@ -5,6 +5,7 @@
 // ・チェックボックスにチェックを入れたら、Deleteボタンを活性にする
 
 
+
 // 1回目のアクセスかどうか
 if (localStorage.getItem('Key') === null) {
     const sample = `<li class="list-group-item d-flex justify-content-between align-items-center">

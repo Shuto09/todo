@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- font awesome-->
+    <script src="https://kit.fontawesome.com/27c29342ca.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome -->
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <title>TodoList</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-8">
+                <h1>TodoList</h1>
+                <form action="" id="form" class="mb-3">
+                    <div class="mb-2">
+                        <label for="item" class="form-label">Contents</label>
+                        <input class="form-control" type="text" name="item" id="item" placeholder="ex) お掃除" value="">
+                    </div>
+                    <div class="alert alert-danger hidden" role="alert">
+                        入力欄が空欄です。
+                    </div>
+                    <input class="btn btn-primary" type="submit" value="登録">
+                </form>
+                <h1 id="sample"></h1>
+                <div>
+                    <ul id="contents" class="list-group">
+                        <!-- <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <span><input type="checkbox" class="me-3" onchange="check(event)">Sample Task</span>
+                            <div>
+                                <button class="btn btn-outline-danger hidden" onclick="edit_f(event)">終了</button>
+                                <button class="btn btn-outline-info" onclick="edit(event)">編集</button>
+                                <button class="btn btn-outline-secondary" disabled  onclick="del(this)"><i class="fas fa-trash-alt fa-lg"></i></button>
+                            </div>
+                        </li> -->
+                    </ul>
+                </div>
+                <div class="delall">
+                    <input type="checkbox" class="me-3 all" onchange="allcheck(event)">
+                    <input type="checkbox" class="me-3 all" onchange="allcheck(event)">
+                    <input type="checkbox" class="me-3 all" onchange="allcheck(event)">
+                    <button class="btn btn-outline-danger all" disabled onclick="alldel(event)" >全て削除</button>
+                </div>
+            </div>
+            <div class="col"></div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+</body></html>

@@ -1,0 +1,16 @@
+.hidden {
+    display: none;
+}
+/* .mar{
+    margin-right: 4px;
+} */
+
+.delall{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.all{
+    margin-top: 30px;
+}
